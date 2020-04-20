@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  background-color: #fcfcfc;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  max-width: 1170px;
+  display: block;
+  margin: auto;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li a {
+  padding: 0.75rem;
+  text-decoration: none;
+  color: rgb(19, 18, 18);
+}
+
+.main-header .shop-essentials i {
+  padding: 0.75rem;
+}
+
+/* Banner */
+
+.banner {
+  background: url(../img/banner.png) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  top: 13rem;
+  left: 12rem;
+}
+
+.banner-text h1 {
+  color: #a8a8a8;
+}
+
+.banner-text h3 {
+  color: #cdcdcd;
+}
+
+.banner-text h3:after {
+  content: '';
+  border-bottom: 2px solid #ddd;
+  width: 9rem;
+  display: block;
+  padding-top: 0.2rem;
+}
+
+/* Featured Items */
+
+.featured-products {
+}
+
+.featured-items {
+
+  display: flex; 
+  flex-flow: column wrap; 
+  height: 100vw;
+  max-height: 1000px;
+  align-content: space-around;
+}
+
+.featured-items img{
+  width: 68%;
+}
+
+
+
+/* .items-one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.items-two{
+  display: flex;
+}*/
+
+/* .items img {
+ 
+  width: 33.3333%;
+} */
