@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#home">Shop</a></li>
+          <li><a href="#home">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img src="./img/logo.png" alt="" />
+      </div>
+      <div class="shop-essentials">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="far fa-heart"></i>
+        <span>log in</span>
+      </div>
+    </header>
+
+    <section class="shop-banner">
+      <div class="container">
+        <div class="shop-banner-image"></div>
+      </div>
+    </section>
+
+    <section class="main-shop">
+      <div class="container">
+        <div class="main-product">
+        <div class="product-filter">
+          <!-- product filter by categories -->
+          <div class="categories-filter">
+            <h3>Product Categories</h3>
+            <form action="">
+              <label class='categorie-container' for="all">All
+                <input type="radio" id="all"  checked="checked" name="gender" value="all">
+                <span class="checkmark"></span>
+              </label><br>
+
+              <label class='categorie-container' for="chairs">Chairs
+                <input type="radio" id="chairs" name="gender" value="chairs">
+                <span class="checkmark"></span>
+              </label><br>
+
+              <label class='categorie-container' for="decors">Decors
+                <input type="radio" id="decors" name="gender" value="decors">
+                <span class="checkmark"></span>
+              </label><br>
+
+              <label class='categorie-container' for="sofa">Sofas
+                <input type="radio" id="sofa" name="gender" value="sofa">
+                <span class="checkmark"></span>
+              </label><br>
+
+              <label class='categorie-container' for="tool">Tools
+                <input type="radio" id="tool" name="gender" value="tool">
+                <span class="checkmark"></span>
+              </label><br>
+
+              <label class='categorie-container' for="uncategorize">Uncategorized
+                <input type="radio" id="uncategorize" name="gender" value="uncategorize">
+                <span class="checkmark"></span>
+              </label>
+            </form>
+          </div>
+
+          <!-- product filter by search -->
+          <div class="search-product">
+            <form action="">
+              <i class="fas fa-search"></i>
+              <input type="search" id="psearch" name="psearch" placeholder="search">
+            </form>
+          </div>
+
+          <!-- Product filter by price -->
+          <div class="price-filter">
+            <h3>Filter by price</h3>
+            <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+            <p>$10<span id="demo"></span></p>
+          </div>
+          <!-- product filter by color -->
+        <div class="color-filter">
+          <h3>Filter By Color</h3>
+          <div class="color-container">
+          <label class="color-pallate">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="color-pallate">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="color-pallate">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="color-pallate">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="color-pallate">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="color-pallate">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="color-pallate">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="color-pallate">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="color-pallate">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="color-pallate">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        </div>
+        </div>
+
+        
+        <div class="product">
+          <div class="product-item">
+            <div class="product-img">
+              <a href="#"><img src="./img/shop/p1.png" alt=""></a>
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">white comfy</h3>
+              <p class="product-price">$570</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-img">
+              <a href="#"><img src="./img/shop/p2.png" alt=""></a>
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">white comfy</h3>
+              <p class="product-price">$570</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-img">
+              <a href="#"><img src="./img/shop/p3.png" alt=""></a>
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">white comfy</h3>
+              <p class="product-price">$570</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-img">
+              <a href="#"><img src="./img/shop/p4.png" alt=""></a>
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">white comfy</h3>
+              <p class="product-price">$570</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-img">
+              <a href="#"><img src="./img/shop/p5.png" alt=""></a>
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">white comfy</h3>
+              <p class="product-price">$570</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-img">
+              <a href="#"><img src="./img/shop/p6.png" alt=""></a>
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">white comfy</h3>
+              <p class="product-price">$570</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-img">
+              <a href="#"><img src="./img/shop/p7.png" alt=""></a>
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">white comfy</h3>
+              <p class="product-price">$570</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-img">
+              <a href="#"><img src="./img/shop/p8.png" alt=""></a>
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">white comfy</h3>
+              <p class="product-price">$570</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-img">
+              <a href="#"><img src="./img/shop/p9.png" alt=""></a>
+            </div>
+            <div class="product-desc">
+              <h3 class="product-name">white comfy</h3>
+              <p class="product-price">$570</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    
+    <section class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="navigation">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#wishlist">Wishlist</a></li>
+              <li><a href="#cart">Cart</a></li>
+            </ul>
+          </div>
+          <div class="social-account">
+            <ul>
+              <li><a href="#Facebook">Facebook</a></li>
+              <li><a href="#Twitter">Twitter</a></li>
+              <li><a href="#Instagram">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="bottom_line" />
+        <div class="footer-bottom">
+          <p>copyrights 2020@ all rights reserverd at adn</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
