@@ -796,3 +796,89 @@ SHOP PAGE
 .product-desc .wishlist i {
   color: #ff8585;
 }
+
+/* ***** Tab Section ****** */
+.tabs {
+  margin-top: 4rem;
+}
+
+.tabs .tab-row{
+  display:flex;
+  justify-content: center;
+}
+
+.tabs .tab-item {
+  background: #f9f9f9;
+  padding: 15px 68px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+#tab-1-content, #tab-2-content, #tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.description-content {
+  width: 73%;
+  margin: 3rem auto;
+  color: #919191;
+}
+.ordered-list {
+  margin-left: 14px;
+  margin-top: 20px;
+}
+
+.description-content h3 {
+  margin-bottom: 1rem;
+}
+.description-content .ordered-list li {
+  margin-bottom: 9px;
+}
+
+.tab-2-content-bottom .text-md{
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+
+.review-details {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.review-image {
+  flex-basis: 12%;
+}
+.review-image img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+.client-details {
+  display: flex;
+}
+
+.review-content {
+  margin-top: 29px;
+  margin-left: 2rem;
+}
+
+.main-review {
+  margin-top: 2rem;
+}
+
+
+.review-details .client-rating {
+  margin-left: auto;
+  color: #ffc107;
+}
+.review-content .main-review, span {
+  color: #919191;
+}
+.review-content .client-details h4 {
+  color: #585858;
+  margin-right: 5px;
+}
