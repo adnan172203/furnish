@@ -882,3 +882,90 @@ SHOP PAGE
   color: #585858;
   margin-right: 5px;
 }
+
+/* ****** Add review ****** */
+.add-review .review-heading {
+  margin-top: -27px;
+  position: absolute;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 2px 5px 6px #efefef;
+  border-radius: 5px;
+}
+
+
+.add-review {
+  background: #f9f9f9;
+  margin-top: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.review-heading {
+  margin-top: -1rem;
+  position: absolute;
+}
+
+.review-form .review-rating {
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.review-form .client-rating {
+  margin-left: auto;
+}
+
+.review-message textarea {
+  outline: none;
+  resize: none;
+  border: none;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 5px 6px #efefef;
+}
+
+.review-form .review-message {
+  margin-bottom: 1rem;
+}
+
+.review-info {
+  position: absolute;
+  margin-top: -13px;
+}
+
+.review-info input {
+  border: none;
+}
+.review-form .review-rating{
+  color: #919191;
+}
+
+.review-form .client-rating{
+  color: #ffc107;
+}
+
+.review-form .submit-button {
+  margin-top: 3rem;
+  position: absolute;
+  margin-left: 12rem;
+}
+.review-form .submit-button button {
+  background: #42b883;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 67px;
+  font-weight: 600;
+}
+
+
+/* ------------ Related Products -------------- */
+
+.related-products {
+  margin-top: 11rem;
+}
+.related-products .related-products-heading {
+  text-align: center;
+}
