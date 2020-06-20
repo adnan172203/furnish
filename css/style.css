@@ -1106,22 +1106,33 @@ SHOP PAGE
 .shoping-cart {
   margin-top: 5rem;
 }
+.cart-area {
+  overflow: hidden;
+}
 
 .cart-area .cart-specification-name {
   display: flex;
-  justify-content: right;
-  margin-right: 11rem;
+  justify-content: center;
+  margin-left: 8rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 .cart-area .cart-specification-name h5 {
   color: #6d6d6d;
-  margin-right: 7rem;
-  margin-bottom: 2rem;
+  flex-basis: 14%;
 }
 .shoping-cart .cart-area .cart-product-details {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-left: -5rem;
+  border-top: 1px solid #eeeeee;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.shoping-cart .cart-area .cart-product-name {
+  flex-basis: 11%;
 }
 
 .cart-product-image,
@@ -1139,12 +1150,6 @@ SHOP PAGE
   max-width: 100%;
 }
 
-.shoping-cart hr {
-  width: 83%;
-  color: #ededed;
-  margin-bottom: 2rem;
-  margin-left: 4rem
-}
 .cart-product-name h5 {
   color: #2c2c2c;
 }
@@ -1171,4 +1176,208 @@ SHOP PAGE
   border-radius: 59%;
   color: #fff;
   margin-right: -8rem;
+}
+
+/* *** Shiping Calculation *** */
+
+.shoping-cart .cart-calculation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart-discount .cart-coupon {
+  margin-bottom: 2rem;
+}
+
+.cart-discount .cart-update {
+  display: flex;
+}
+
+.cart-coupon input[type='text'] {
+  /* position: relative; */
+  padding: 10px 13px;
+  border-radius: 7px;
+  border: 1px solid #eeeeee;
+  outline: none;
+}
+
+button.coupon-button {
+  /* position: absolute; */
+  /* right: 0; */
+  background-color: #42b883;
+  color: #fff;
+  padding: 12px 48px;
+  border: 0;
+  border-radius: 7px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+.cart-update p {
+  color: #919191;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.cart-update i {
+  padding-right: 5px;
+}
+
+.cart-update button.update-button {
+  border: 2px solid #42b883;
+  background: none;
+  padding: 10px 54px;
+  border-radius: 7px;
+  color: #42b883;
+  font-weight: 600;
+  outline:none;
+  cursor:pointer;
+}
+
+.cart-total-calculation .sub-total {
+  display: flex;
+  border-bottom: 1px solid #eeee;
+  padding-bottom: 2rem;
+}
+
+.sub-total h4 {
+  margin-right: 10rem;
+  color: #202020;
+}
+
+.sub-total .sub-total-price {
+  color: #8b8b8b;
+}
+
+.cart-total-calculation .shipping {
+  margin-top: 2rem;
+}
+
+.cart-total-calculation .shipping h4 {
+  margin-bottom: 1rem;
+}
+
+/* Shipping Rate */
+
+.shipping-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #525252;
+}
+
+/* Hide the browser's default radio button */
+.shipping-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.shipping-container .shipping_checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid #eee;
+  border-radius: 50%;
+}
+
+/* When the radio button is checked, add a blue background */
+.shipping-container input:checked ~ .shipping_checkmark {
+  background-color: #ffffff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.shipping-container .shipping_checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.shipping-container input:checked ~ .shipping_checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.shipping-container .shipping_checkmark:after {
+  top: 4.5px;
+  left: 3.9px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #585858;
+}
+
+.calculate-shipping {
+  margin-top: 2rem;
+}
+
+.country-select {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.country-select input[type='text'] {
+  padding: 12px;
+  border-radius: 7px;
+  border: 1px solid #eeeeee;
+  margin-bottom: 5px;
+  outline: none;
+}
+
+.country-select input[type='text']::placeholder {
+  color: #919191;
+}
+
+.country-select select {
+  padding: 12px;
+  border-radius: 7px;
+  border: 1px solid #eeeeee;
+  margin-bottom: 5px;
+  color: #919191;
+}
+
+.cart-total-calculation .total-price {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.checkout-button {
+  margin-bottom: 3rem;
+}
+
+.checkout-button button {
+  background: none;
+  color: #42b883;
+  border: 1px solid #42b883;
+  padding: 1rem 4rem;
+  border-radius: 7px;
+  font-weight: 600;
+  width: 100%;
+  outline:none;
+}
+
+.checkout-button button:hover{
+  background:#42b883;
+  color:#ffffff;
+  cursor:pointer;
+  transition: 0.3s ease-in;
+  font-weight: 600;
 }

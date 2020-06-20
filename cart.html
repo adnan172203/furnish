@@ -50,7 +50,7 @@
             <h5>Qty</h5>
             <h5>Total</h5>
           </div>
-          <hr size="1">
+
           <!-- ****** Product 1 ****** -->
           <div class="cart-product-details">
             <div class="cart-product-count">
@@ -66,8 +66,8 @@
               <p>$125</p>
             </div>
             <div class="cart-product-qty">
-              <i class="fas fa-chevron-left"></i> 
-                <span>2</span> 
+              <i class="fas fa-chevron-left"></i>
+              <span>2</span>
               <i class="fas fa-chevron-right"></i>
             </div>
             <div class="cart-product-total">
@@ -93,8 +93,8 @@
               <p>$125</p>
             </div>
             <div class="cart-product-qty">
-              <i class="fas fa-chevron-left"></i> 
-                <span>2</span> 
+              <i class="fas fa-chevron-left"></i>
+              <span>2</span>
               <i class="fas fa-chevron-right"></i>
             </div>
             <div class="cart-product-total">
@@ -120,8 +120,8 @@
               <p>$250</p>
             </div>
             <div class="cart-product-qty">
-              <i class="fas fa-chevron-left"></i> 
-                <span>1</span> 
+              <i class="fas fa-chevron-left"></i>
+              <span>1</span>
               <i class="fas fa-chevron-right"></i>
             </div>
             <div class="cart-product-total">
@@ -129,6 +129,75 @@
             </div>
             <div class="cart-product-delete">
               <i class="far fa-times-circle"></i>
+            </div>
+          </div>
+
+          <div class="cart-calculation">
+            <div class="cart-discount">
+              <div class="cart-coupon">
+                <input type="text" placeholder="Coupon Code" />
+                <button class="coupon-button">Apply Coupon</button>
+              </div>
+
+              <div class="cart-update">
+                <p><i class="fas fa-long-arrow-alt-left"></i> continue shipping</p>
+                <button class="update-button">
+                   update cart
+                </button>
+              </div>  
+            </div>
+
+            <div class="cart-total-calculation">
+              <div class="sub-total">
+                <h4>Sub Total</h4>
+                <span class="sub-total-price">$900</span>
+              </div>
+
+              <div class="shipping">
+                <h4>Shipping</h4>
+                <form action="">
+                  <label class='shipping-container'>Flat Rate
+                    <input type="radio" checked="checked" name="gender" value="flat-rate">
+                    <span class="shipping_checkmark"></span>
+                  </label><br>
+    
+                  <label class='shipping-container'>Express Delivery
+                    <input type="radio" name="gender" value="delivery">
+                    <span class="shipping_checkmark"></span>
+                  </label><br>
+    
+                  <label class='shipping-container'>In-stock Pickup
+                    <input type="radio" name="gender" value="pickup">
+                    <span class="shipping_checkmark"></span>
+                  </label><br>
+                </form>
+
+              </div>
+
+              <div class="calculate-shipping">
+                <h4>Calculate Shipping</h4>
+    
+                <div class="country-select">
+                  <select>
+                    <option value="0">Select Country:</option>
+                    <option value="1">USA</option>
+                    <option value="2">UK</option>
+                    <option value="3">Canada</option>
+                  </select>
+                  <input type="text" placeholder="Address" name="" id="">
+                  <input type="text" placeholder="Town/City" name="" id="">
+                  <input type="text" placeholder="Post Code" name="" id="">
+                </div>
+              </div>
+
+              <div class="total-price">
+                <h4>Total</h4>
+                <span class="total">$915</span>
+              </div>
+
+              <div class="checkout-button">
+                <button>Proceed To Checkout</button>
+              </div>
             </div>
           </div>
         </div>
