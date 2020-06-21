@@ -226,7 +226,11 @@ button.shop-now-button {
 }
 
 .owl-carousel img {
-  box-shadow: 10px 10px 26px -6px rgba(0, 0, 0, 0.07);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 7px;
+  box-shadow: -2px -1px 22px -6px rgba(228, 225, 225, 0.71);
+  -webkit-box-shadow: -2px -1px 22px -6px rgba(228, 225, 225, 0.71);
 }
 
 /* Items on sale */
@@ -795,6 +799,12 @@ SHOP PAGE
   color: #ff8585;
 }
 
+.wishlist-continue-shopping {
+  margin-left: 13rem;
+  color: #919191;
+  margin-top: 2rem;
+}
+
 /* ***** Tab Section ****** */
 .tabs {
   margin-top: 4rem;
@@ -964,6 +974,7 @@ SHOP PAGE
 }
 .related-products .related-products-heading {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 /* ------------- Contact Page ------------------ */
@@ -1404,15 +1415,11 @@ button.coupon-button {
   font-weight: 600;
 }
 
-
-
 .order-information .order-info-container {
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
 }
-
-.order-info-container infos {}
 
 .order-info-container .infos {
   background: #ffffff;
@@ -1433,8 +1440,6 @@ button.coupon-button {
 .order-info-container .infos h4 {
   color: #585858;
 }
-
-
 
 .order-details .order-single-product-details {
   display: flex;
@@ -1473,11 +1478,10 @@ button.coupon-button {
   padding-top: 2rem;
 }
 
-
 .order-price-calculation .order-sub-total {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
 }
 
 .order-price-calculation {
@@ -1487,15 +1491,15 @@ button.coupon-button {
 }
 
 .order-price-calculation .order-shipping {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
 }
 
 .order-price-calculation .order-payment-method {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
 }
 
 .order-sub-total h4 {
@@ -1525,4 +1529,85 @@ button.coupon-button {
 
 .order-total p {
   flex-basis: 15%;
+}
+
+/************ ============= wishlist =============== **************/
+
+.wishlist {
+  margin-top: 3rem;
+}
+
+.wishlist .wishlist-product {
+  overflow: hidden;
+  width: 85%;
+  margin: auto;
+}
+
+.wishlist .wishlist-heading {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.wishlist .wishlist-product .wishlist-single-product {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  padding: 1rem;
+}
+
+.wishlist .wishlist-product .wishlist-product-name {
+  flex-basis: 14%;
+}
+
+.wishlist-product-image,
+.wishlist-product-name,
+.wishlist-product-price {
+  margin-right: -3rem;
+}
+
+.wishlist-single-product .wishlist-product-image {
+  flex-basis: 9%;
+}
+.wishlist-product-image img {
+  max-width: 100%;
+}
+
+.wishlist-product-name h5 {
+  color: #2c2c2c;
+}
+
+.wishlist-product-price,
+.wishlist-product-delete {
+  color: #919191;
+}
+
+.wishlist-product-delete i {
+  margin-left: -4rem;
+  font-size: 20px;
+}
+
+.wishlist-product-count {
+  background: linear-gradient(
+    355deg,
+    rgb(68, 189, 139) 35%,
+    rgb(79, 216, 147) 100%
+  );
+  padding: 3px 8px;
+  border-radius: 59%;
+  color: #fff;
+  margin-right: -6rem;
+}
+
+.wish-add-to-cart button {
+  background: #42b883;
+  color: #ffffff;
+  outline: none;
+  border: 0;
+  padding: 9px 28px;
+  border-radius: 7px;
+  font-weight: 600;
 }
