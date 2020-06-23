@@ -1,51 +1,66 @@
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
+(function () {
+  $(document).ready(function () {
+    $('.owl-carousel').owlCarousel();
   });
 
   $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  });
+})();
+
+(function () {
+  // tab content
+  const tabItems = document.querySelectorAll('.tab-item');
+  const tabContentItems = document.querySelectorAll('.tab-content-item');
+
+  //select tab content item
+  function selectItem(e) {
+    removeBorder();
+    removeShow();
+
+    //Add border to current tab
+    this.classList.add('tab-border');
+
+    //grab content item from the  dom
+    const tabContentItem = document.querySelector(`#${this.id}-content`);
+
+    //add show class
+    tabContentItem.classList.add('show');
+  }
+
+  function removeBorder() {
+    tabItems.forEach((item) => item.classList.remove('tab-border'));
+  }
+
+  function removeShow() {
+    tabContentItems.forEach((item) => item.classList.remove('show'));
+  }
+
+  //Lister for  tab click
+  tabItems.forEach((item) => item.addEventListener('click', selectItem));
+})();
 
 
-// tab content
-const tabItems = document.querySelectorAll('.tab-item');
-const tabContentItems = document.querySelectorAll('.tab-content-item');
+(function () {
+  const cartIcon = document.querySelector('.fa-shopping-cart');
+  const headerDropdown = document.querySelector('.header-cart-dropdown');
 
-//select tab content item
-function selectItem(e) {
-  removeBorder();
-  removeShow();
-  
-  //Add border to current tab
-  this.classList.add('tab-border');
+  function showMinicart() {
+    headerDropdown.classList.toggle('open');
+  }
 
-  //grab content item from the  dom
-  const tabContentItem = document.querySelector(`#${this.id}-content`);
-
-  //add show class
-  tabContentItem.classList.add('show');
-}
-
-function removeBorder() {
-  tabItems.forEach((item) => item.classList.remove('tab-border'));
-}
-
-function removeShow() {
-  tabContentItems.forEach((item) => item.classList.remove('show'));
-}
-
-//Lister for  tab click
-tabItems.forEach((item) => item.addEventListener('click', selectItem));
+  cartIcon.addEventListener('click', showMinicart);
+})();
