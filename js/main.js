@@ -64,3 +64,14 @@
 
   cartIcon.addEventListener('click', showMinicart);
 })();
+
+(function(){
+  const wishIcon = document.querySelector('.fa-heart');
+  const wishDropdown = document.querySelector('.header-wishlist-dropdown');
+
+  function showWishlist(){
+    wishDropdown.classList.toggle('open-wishlist');
+  }
+
+  wishIcon.addEventListener('click', showWishlist);
+})();
