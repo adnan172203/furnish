@@ -21,6 +21,8 @@
   });
 })();
 
+//single product page tab
+
 (function () {
   // tab content
   const tabItems = document.querySelectorAll('.tab-item');
@@ -53,6 +55,7 @@
   tabItems.forEach((item) => item.addEventListener('click', selectItem));
 })();
 
+//minicart dropdown
 
 (function () {
   const cartIcon = document.querySelector('.fa-shopping-cart');
@@ -65,6 +68,8 @@
   cartIcon.addEventListener('click', showMinicart);
 })();
 
+//wishlist dropdown
+
 (function(){
   const wishIcon = document.querySelector('.fa-heart');
   const wishDropdown = document.querySelector('.header-wishlist-dropdown');
@@ -74,4 +79,16 @@
   }
 
   wishIcon.addEventListener('click', showWishlist);
+})();
+
+
+(function(){
+  const burgerIcon = document.querySelector('.fa-bars');
+  const mainHeader = document.querySelector('.main-header');
+
+  function showMenu(){
+    mainHeader.classList.toggle('show-menu');
+  }
+
+  burgerIcon.addEventListener('click', showMenu);
 })();
