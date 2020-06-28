@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -504,74 +504,77 @@ a {
 
 .deal {
   background: url(../img/BestDeal.png) no-repeat;
-  height: 100vh;
-  background-size: contain;
+  height: 81vh;
+  background-size: cover;
   background-position: center;
-  /* position: relative; */
+  position: relative;
 }
 
-.heading {
+.deal .heading {
   position: absolute;
   display: flex;
-  justify-content: flex-end;
-  width: 79%;
-  margin-top: 9rem;
+  right: 25%;
+  top: 27%;
 }
 
-.heading h1 {
-  font-weight: 600;
-  font-size: 2.5rem;
-  color: #202020;
+.deal .heading h1 {
+  font-weight: 700;
+  font-size: 2.5vw;
+  color: #585858;
 }
 
-.countdown-timer {
-  display: flex;
-  width: 85%;
-  justify-content: flex-end;
-  padding-top: 16rem;
-}
-
-.days,
-.hour,
-.min,
-.sec {
-  height: 100px;
-  width: 100px;
-  background: #52de97;
-  margin-right: 1rem;
-  border-radius: 1rem;
-  color: #fff;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.days p,
-.hour p,
-.min p,
-.sec p {
-  margin-top: 2rem;
-}
-
-.countdown-timer .duration {
-  color: #bebebe;
-}
 
 .shop-count {
   display: flex;
   flex-direction: column;
 }
 
-.button {
-  width: 85%;
-  text-align: right;
-  padding-right: 7rem;
+.countdown-timer {
+  display: flex;
+  width: 35%;
+  padding-top: 13rem;
+  margin: auto 50%;
+}
+
+
+.days, .hour, .min, .sec {
+    height: auto;
+    width: 19%;
+    background: #52de97;
+    margin-right: 1rem;
+    border-radius: 11px;
+    color: #fff;
+    text-align: center;
+    position:relative;
+}
+
+.days p,
+.hour p,
+.min p,
+.sec p {
+  font-size: 2vw;
+  padding: 1.5rem 1rem;
+  font-weight: 600;
+}
+
+.countdown-timer .duration {
+    color: #a9a7a7;
+    position: absolute;
+    left: 29%;
+    font-size: 1.5vw;
+}
+
+
+.shop-count .button {
   margin-top: 4rem;
+  text-align: center;
+  margin-left: 31%;
 }
 
 button.shop-now-button {
   background: transparent;
   border: 2px solid #42b883;
-  padding: 1rem 4rem;
+  padding: 10px 2rem;
   border-radius: 9px;
   font-size: 1.2rem;
   font-weight: 600;

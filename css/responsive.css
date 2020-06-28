@@ -60,6 +60,9 @@
 }
 
 @media screen and (max-width: 900px) {
+
+  /* =============== Featured product ======= */
+
   section.featured-products {
     overflow: hidden;
   }
@@ -116,7 +119,9 @@
     font-size: 14px;
 }
 
-
-
+/* ======== Deal Section =============== */
+  /* .deal{
+    display:none;
+  } */
 
 }
