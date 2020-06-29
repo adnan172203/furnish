@@ -124,4 +124,71 @@
     display:none;
   } */
 
+
+
+  /* =============== Items on Sale ======================= */
+
+  section.items-on-sale {
+    overflow: hidden;
+  }
+
+  .items-on-sale .on-sale-items {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 85%;
+    margin-left: 10rem;
+  }
+
+  .items-on-sale .on-sale-items .one img,
+  .items-on-sale .on-sale-items .two img,
+  .items-on-sale .on-sale-items .three img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 26px -6px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+  }
+
+  .items-on-sale .on-sale-items .column-two {
+
+    display: flex;
+  }
+
+  .items-on-sale .on-sale-items .one {
+    margin-bottom: 80px;
+  }
+
+  .items-on-sale .on-sale-items .two {
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+  .items-on-sale .on-sale-items .column-one {
+    position: relative;
+    display: flex;
+  }
+
+  .on-sale-items .one {
+    flex-basis: 70%;
+  }
+
+  .on-sale-items .two {
+    flex-basis: 29%;
+  }
+
+  .on-sale-items .three {
+    flex-basis: 39%;
+  }
+
+  .items-on-sale .on-sale-items .three-text {
+    left: 27%;
+  }
+
+  .items-on-sale .on-sale-items .two-text {
+    margin-top: -55px;
+    font-size: 14px;
+}
+
+  
+
 }

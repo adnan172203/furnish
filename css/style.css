@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-body {
+html,body {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -666,24 +666,21 @@ button.shop-now-button {
   color: #fff;
 }
 
-/* Newsletter */
+/* ============== Newsletter ======================= */
 .newsletter {
   background: url(../img/Newsletter.png) no-repeat center;
-  background-size: contain;
+  background-size: cover;
   height: 100vh;
+  position: relative;
+  max-width: 100vw;
 }
 
-.divide-newsletter {
-  display: flex;
-}
-
-.gap {
-  flex: 1;
-}
 
 .newsletter-content {
-  flex: 1;
-  padding-top: 12rem;
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 37%;
 }
 
 .newsletter-text h2 {
@@ -716,7 +713,7 @@ button.shop-now-button {
   font-size: 1rem;
 }
 
-/* Footer */
+/* =================Footer ==========*/
 
 .footer {
   overflow: hidden;
