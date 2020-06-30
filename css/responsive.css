@@ -60,7 +60,6 @@
 }
 
 @media screen and (max-width: 900px) {
-
   /* =============== Featured product ======= */
 
   section.featured-products {
@@ -117,14 +116,12 @@
   .featured-products .featured-items .two-text {
     margin-top: -55px;
     font-size: 14px;
-}
+  }
 
-/* ======== Deal Section =============== */
+  /* ======== Deal Section =============== */
   /* .deal{
     display:none;
   } */
-
-
 
   /* =============== Items on Sale ======================= */
 
@@ -150,7 +147,6 @@
   }
 
   .items-on-sale .on-sale-items .column-two {
-
     display: flex;
   }
 
@@ -161,7 +157,7 @@
   .items-on-sale .on-sale-items .two {
     margin-bottom: 30px;
     margin-right: 10px;
-}
+  }
 
   .items-on-sale .on-sale-items .column-one {
     position: relative;
@@ -187,8 +183,20 @@
   .items-on-sale .on-sale-items .two-text {
     margin-top: -55px;
     font-size: 14px;
-}
+  }
 
-  
+  /* ================ Shop ================= */
+  .main-shop .main-product {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
+  .main-shop .product {
+    justify-content: center;
+  }
+
+  .main-shop .product-filter {
+    flex-basis: 20%;
+    margin-left: 2rem;
+  }
 }

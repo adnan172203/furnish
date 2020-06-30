@@ -6,7 +6,8 @@
   padding: 0;
 }
 
-html,body {
+html,
+body {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -666,6 +667,13 @@ button.shop-now-button {
   color: #fff;
 }
 
+.sale-discount-one h3,
+.sale-discount-two h3,
+.sale-discount-three h3 {
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
 /* ============== Newsletter ======================= */
 .newsletter {
   background: url(../img/Newsletter.png) no-repeat center;
@@ -675,7 +683,6 @@ button.shop-now-button {
   max-width: 100vw;
 }
 
-
 .newsletter-content {
   position: absolute;
   width: 50%;
@@ -684,28 +691,29 @@ button.shop-now-button {
 }
 
 .newsletter-text h2 {
-  color: #6c6c6c;
-  font-weight: 600;
+  color: #585858;
+  font-weight: 700;
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .newsletter-text p {
   margin-bottom: 1.5rem;
+  color: #8b8b8b;
 }
 
 .newsletter-subscription input {
   width: 60%;
   display: block;
   padding: 10px;
-  border-radius: 7px;
+  border-radius: 4px;
   outline: 0;
-  border: 1px solid #dddd;
+  border: 1px solid #8b8b8b;
   margin-bottom: 11px;
 }
 
 .newsletter-subscription button {
-  padding: 8px 40px;
+  padding: 1rem 4rem;
   border-radius: 5px;
   background: transparent;
   border: 1px solid #42b883;
@@ -791,6 +799,7 @@ SHOP PAGE
 
 .main-shop .main-product {
   display: flex;
+  padding: 0 2rem;
 }
 .main-shop .product-filter {
   flex-basis: 20%;
