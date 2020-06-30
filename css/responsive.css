@@ -199,4 +199,31 @@
     flex-basis: 20%;
     margin-left: 2rem;
   }
+
+  /* =================== Single Page =============== */
+
+  .product-details .product-container {
+    flex-direction: column;
+  }
+
+  .product-details .product-image {
+    padding: 2rem;
+  }
+
+  .tabs .tab-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabs .tab-item {
+    width: 75%;
+  }
+
+  .tab-content .tab-content-item {
+    padding: 3rem;
+  }
+
+  .review-image {
+    margin-top: 4%;
+  }
 }
