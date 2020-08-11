@@ -1499,6 +1499,7 @@ SHOP PAGE
 .cart-area .cart-specification-name h5 {
   color: #6d6d6d;
   flex-basis: 14%;
+  font-weight: 500;
 }
 .shoping-cart .cart-area .cart-product-details {
   display: flex;
@@ -1531,6 +1532,8 @@ SHOP PAGE
 
 .cart-product-name h5 {
   color: #2c2c2c;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .cart-product-price,
@@ -1544,6 +1547,7 @@ SHOP PAGE
 }
 .cart-product-qty span {
   color: #919191;
+  padding: 0.5rem;
 }
 .cart-product-count {
   background: linear-gradient(
@@ -1554,35 +1558,44 @@ SHOP PAGE
   padding: 3px 8px;
   border-radius: 59%;
   color: #fff;
-  margin-right: -8rem;
+  margin-right: -7rem;
 }
 
 /* *** Shiping Calculation *** */
 
 .shoping-cart .cart-calculation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+.cart-discount {
+  margin-left: -15%;
+}
+
+.cart-total-calculation {
+  margin-left: -8%;
 }
 
 .cart-discount .cart-coupon {
   margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cart-discount .cart-update {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .cart-coupon input[type='text'] {
-  /* position: relative; */
   padding: 10px 13px;
   border-radius: 7px;
   border: 1px solid #eeeeee;
   outline: none;
+  margin-right: 2px;
 }
 
 button.coupon-button {
-  /* position: absolute; */
-  /* right: 0; */
   background-color: #42b883;
   color: #fff;
   padding: 12px 48px;
@@ -1621,8 +1634,9 @@ button.coupon-button {
 }
 
 .sub-total h4 {
-  margin-right: 10rem;
+  margin-right: 12vw;
   color: #202020;
+  font-weight: 500;
 }
 
 .sub-total .sub-total-price {
@@ -1635,6 +1649,11 @@ button.coupon-button {
 
 .cart-total-calculation .shipping h4 {
   margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.cart-total-calculation .calculate-shipping h4 {
+  font-weight: 500;
 }
 
 /* Shipping Rate */
@@ -1801,7 +1820,7 @@ button.coupon-button {
 
 .order-info-container .infos p {
   color: #919191;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 1rem;
 }
 
@@ -1979,3 +1998,5 @@ button.coupon-button {
   border-radius: 7px;
   font-weight: 600;
 }
+
+/* ============================= CHECKOUT ====================== */

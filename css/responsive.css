@@ -226,4 +226,52 @@
   .review-image {
     margin-top: 4%;
   }
+
+  /* =============== Cart ==================== */
+  .cart-product-count {
+    display: none;
+  }
+
+  .cart-discount .cart-update p {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cart-area .cart-specification-name {
+    display: none;
+  }
+
+  .shoping-cart .cart-area .cart-product-details {
+    position: relative;
+  }
+
+  .shoping-cart .cart-area .cart-product-name {
+    flex-basis: 20%;
+  }
+
+  .cart-product-price {
+    position: absolute;
+    left: 36%;
+    bottom: -10%;
+  }
+  .cart-product-qty {
+    position: absolute;
+    bottom: -10%;
+    left: 46%;
+  }
+
+  .shoping-cart .cart-calculation {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: -6%;
+    margin-top: 10%;
+  }
+  .cart-total-calculation {
+    margin-left: 0;
+}
+
+  .sub-total h4 {
+    margin-right: 22vw;
+  }
 }
