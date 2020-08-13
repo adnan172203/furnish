@@ -1601,7 +1601,6 @@ button.coupon-button {
   padding: 12px 48px;
   border: 0;
   border-radius: 7px;
-  font-weight: 600;
   outline: none;
   cursor: pointer;
 }
@@ -1630,7 +1629,8 @@ button.coupon-button {
 .cart-total-calculation .sub-total {
   display: flex;
   border-bottom: 1px solid #eeee;
-  padding-bottom: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
 }
 
 .sub-total h4 {
@@ -1782,9 +1782,18 @@ button.coupon-button {
 
 /* ***************************** Order page ********************************* */
 
+.order-details {
+  margin-bottom: 3rem;
+}
+
 .order-greetings {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.greetings{
+  width:75%;
+  margin: 0 auto;
 }
 
 .greetings p {
@@ -1793,7 +1802,7 @@ button.coupon-button {
     rgba(68, 189, 139, 1) 28%,
     rgba(79, 216, 147, 1) 100%
   );
-  width: 57%;
+  width: 100%;
   margin: auto;
   padding: 1rem;
   border-radius: 7px;
@@ -1831,14 +1840,14 @@ button.coupon-button {
 .order-details .order-single-product-details {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   border-top: 1px solid #eeeeee;
   margin: auto;
   padding: 1rem 1rem;
 }
 
 .order-single-product-details .order-product-image {
-  flex-basis: 12%;
+  flex-basis: 15%;
 }
 
 .order-product-image img {
@@ -1846,7 +1855,7 @@ button.coupon-button {
 }
 
 .order-single-product-details > * {
-  margin-right: 6rem;
+  /* margin-right: 6rem; */
 }
 
 .order-product-details {
@@ -1863,6 +1872,11 @@ button.coupon-button {
 .order-product-details h3 {
   margin-bottom: 2rem;
   padding-top: 2rem;
+}
+
+.order-product-name h5 {
+  font-weight: 500;
+  color: #202020;
 }
 
 .order-price-calculation .order-sub-total {
@@ -1889,16 +1903,25 @@ button.coupon-button {
   margin-bottom: 1rem;
 }
 
+.order-sub-total h4,
+.order-shipping h4,
+.order-payment-method h4,
+.order-total h4 {
+  font-weight: 400;
+}
+
 .order-sub-total h4 {
-  flex-basis: 28%;
+  flex-basis: 26%;
+  text-align: left;
 }
 
 .order-shipping h4 {
   flex-basis: 27%;
+  text-align: left;
 }
 
 .order-payment-method h4 {
-  flex-basis: 24%;
+  margin-left:10px
 }
 
 .order-total {
@@ -1911,11 +1934,14 @@ button.coupon-button {
 }
 
 .order-total h4 {
-  flex-basis: 37%;
+  flex-basis: 33%;
+  text-align: left;
+  margin-left: 2.3rem;
 }
 
 .order-total p {
   flex-basis: 15%;
+  font-size:1.5rem;
 }
 
 /************ ============= wishlist =============== **************/
