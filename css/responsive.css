@@ -315,7 +315,6 @@
 }
 
 @media screen and (max-width: 550px) {
-
   .order-info-container .infos {
     padding: 0.8rem;
     flex-basis: 16%;
@@ -353,6 +352,16 @@
 
   .cart-product-qty {
     left: 51%;
+  }
+
+  /* order */
+  .order-product-details {
+    width: 92%;
+  }
+
+  .order-total-product {
+    left: 31vw;
+    font-size: 14px;
   }
 }
 
