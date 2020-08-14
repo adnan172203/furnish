@@ -1380,19 +1380,20 @@ SHOP PAGE
 
 .contact-form {
   margin-top: 5rem;
-  margin-right: 26rem;
+
 }
 
 .contact-form-info {
   margin-top: 6rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .contact-field {
   background: #f9f9f9;
   margin-top: 3rem;
   position: relative;
-  display: flex;
-  justify-content: center;
+
 }
 
 .contact-field .contact-form-heading {
@@ -1402,11 +1403,16 @@ SHOP PAGE
   box-shadow: 2px 5px 6px #efefef;
   border-radius: 5px;
   color: #919191;
-  margin-top: -2rem;
+  top: -12%;
+  left: 39%;
 }
 
 .contact-form-heading h3 {
   font-weight: 100;
+}
+
+.contact-form {
+  padding-top: 3rem;
 }
 
 .contact-form .submit-button {
@@ -1420,9 +1426,13 @@ SHOP PAGE
 }
 
 .contact-info {
-  margin-bottom: 1rem;
   display: flex;
-  width: 226%;
+  width: 51%;
+}
+.contact-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-info input {
@@ -1430,24 +1440,26 @@ SHOP PAGE
   flex-grow: 1;
   padding: 1rem;
   margin-right: 8px;
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
   border-radius: 5px;
   color: #919191;
+  width: 100%;
+}
+
+.contact-message {
+  width: 50%;
 }
 
 .contact-message textarea {
   outline: none;
   resize: none;
   border: none;
-  overflow: hidden;
   margin-bottom: 1rem;
   border-radius: 5px;
   box-shadow: 2px 5px 6px #efefef;
-  width: 60%;
-  position: absolute;
-  bottom: -3rem;
   padding: 1rem;
   color: #919191;
+  width: 100%;
 }
 
 .contact-button {
