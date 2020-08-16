@@ -246,6 +246,31 @@
     flex-basis: 15%;
     font-size: 12px;
   }
+
+  /* ======= contact ===== */
+  .shop-banner-image {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .address,
+  .phone,
+  .email {
+    padding: 2rem 2.5rem;
+  }
+
+  .contact-info {
+    width: 80%;
+  }
+
+  .contact-message {
+    width: 80%;
+  }
+
+  .navigation ul {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -312,6 +337,21 @@
     top: 67%;
     left: 37%;
   }
+
+  /* ===== Contact ========= */
+  .address,
+  .phone,
+  .email {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-field .contact-form-heading {
+    width: 29%;
+  }
+
+  .contact-form-heading h3 {
+    font-size: 1.7vw;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -329,6 +369,30 @@
     position: absolute;
     top: 67%;
     left: 31%;
+  }
+
+  /* ====== contact page ======== */
+
+  .contact .contact-details {
+    flex-direction: column;
+    margin: 0 6%;
+  }
+
+  .address,
+  .phone,
+  .email {
+    margin-bottom: 1rem;
+    height: 180px;
+    padding: 4rem 1.5rem;
+  }
+
+  .contact-field .contact-form-heading {
+    top: -8%;
+    width: 37%;
+  }
+
+  .contact-form-heading h3 {
+    font-size: 2.3vw;
   }
 }
 
@@ -368,5 +432,32 @@
 @media screen and (max-width: 375px) {
   .shoping-cart .cart-area .cart-product-name {
     flex-basis: 40%;
+  }
+
+  /* ==== Contact Page ===== */
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-field .contact-form-heading {
+    top: -6%;
+    width: 55%;
+  }
+
+  .contact-form-heading h3 {
+    font-size: 3.6vw;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+  }
+
+  .social h3 {
+    font-size: 14px;
+  }
+
+  .social img {
+    margin-left: 0.5rem;
   }
 }

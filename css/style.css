@@ -731,11 +731,12 @@ button.shop-now-button {
 .navigation ul {
   display: flex;
   list-style: none;
-  justify-content: center;
+  margin-left: 2rem;
 }
 
 .navigation ul li {
   margin-right: 2rem;
+  margin-bottom: 1rem;
 }
 
 .navigation ul li a {
@@ -745,11 +746,13 @@ button.shop-now-button {
 .social-account ul {
   display: flex;
   list-style: none;
-  justify-content: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .social-account ul li {
   margin-right: 2rem;
+  margin-bottom: 1rem;
 }
 
 .social-account ul li a {
@@ -764,7 +767,7 @@ button.shop-now-button {
 .bottom_line {
   background-color: #ffffff;
   width: 79%;
-  margin-left: 83px;
+  margin: 0 auto;
   border: none;
   height: 1px;
   margin-bottom: 1rem;
@@ -1354,7 +1357,7 @@ SHOP PAGE
 
 .contact .contact-details {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   color: #aaa;
   text-align: center;
   font-size: 14px;
@@ -1367,20 +1370,27 @@ SHOP PAGE
 .address,
 .phone,
 .email {
-  padding: 3rem 4rem;
+  padding: 3rem 3rem;
   border-radius: 5px;
+  color: #6D6D6D;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
+  margin-right: 1rem;
+}
+
+.address:hover,
+.phone:hover,
+.email:hover {
   background: linear-gradient(
     355deg,
     rgba(68, 189, 139, 1) 35%,
     rgba(79, 216, 147, 1) 100%
   );
   color: #ffffff;
-  box-shadow: 2px 5px 6px #dcc8c8;
+  transition: 0.4s;
 }
 
 .contact-form {
   margin-top: 5rem;
-
 }
 
 .contact-form-info {
@@ -1393,7 +1403,6 @@ SHOP PAGE
   background: #f9f9f9;
   margin-top: 3rem;
   position: relative;
-
 }
 
 .contact-field .contact-form-heading {
@@ -1402,32 +1411,37 @@ SHOP PAGE
   padding: 1rem;
   box-shadow: 2px 5px 6px #efefef;
   border-radius: 5px;
-  color: #919191;
-  top: -12%;
-  left: 39%;
+  color: #6d6d6d;
+  top: -9%;
+  left: 0;
+  right: 0;
+  width: 22%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .contact-form-heading h3 {
-  font-weight: 100;
+  font-weight: 500;
+  font-size: 1.3vw;
 }
 
 .contact-form {
   padding-top: 3rem;
 }
 
-.contact-form .submit-button {
+/* .contact-form .submit-button {
   margin-top: 3rem;
   position: absolute;
   margin-left: 12rem;
-}
+} */
 
 .contact-button {
-  text-align: right;
+  text-align: center;
 }
 
 .contact-info {
   display: flex;
-  width: 51%;
+  width: 60%;
 }
 .contact-input {
   display: flex;
@@ -1447,11 +1461,10 @@ SHOP PAGE
 }
 
 .contact-message {
-  width: 50%;
+  width: 60%;
 }
 
 .contact-message textarea {
-  outline: none;
   resize: none;
   border: none;
   margin-bottom: 1rem;
@@ -1463,28 +1476,30 @@ SHOP PAGE
 }
 
 .contact-button {
-  right: 34rem;
-  margin-top: 4rem;
-  position: absolute;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.contact-form .contact-button button {
+.contact-button input[type='submit'] {
   background: #42b883;
-  color: #fff;
-  border-radius: 5px;
+  padding: 0.7rem 4rem;
   border: none;
-  padding: 13px 67px;
-  font-weight: 600;
+  border-radius: 7px;
+  outline: none;
+  color: #fff;
 }
 
 .social-contact {
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 4rem;
+  overflow: hidden;
 }
+
 .social-contact .social {
   display: flex;
   justify-content: center;
-  color: #919191;
+  align-items:center;
+  color: #585858;
 }
 .social img {
   margin-left: 1rem;
@@ -1803,8 +1818,8 @@ button.coupon-button {
   margin-bottom: 3rem;
 }
 
-.greetings{
-  width:75%;
+.greetings {
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -1933,7 +1948,7 @@ button.coupon-button {
 }
 
 .order-payment-method h4 {
-  margin-left:10px
+  margin-left: 10px;
 }
 
 .order-total {
@@ -1953,7 +1968,7 @@ button.coupon-button {
 
 .order-total p {
   flex-basis: 15%;
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
 /************ ============= wishlist =============== **************/
