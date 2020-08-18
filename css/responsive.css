@@ -271,6 +271,27 @@
     justify-content: flex-start;
     flex-wrap: wrap;
   }
+
+  /* ======== wishlist =============== */
+  .wishlist-product-count {
+    display: none;
+  }
+
+  .wishlist .wishlist-product .wishlist-single-product {
+    justify-content: space-between;
+  }
+
+  .wishlist-single-product .wishlist-product-image {
+    flex-basis: 13%;
+    margin-left: 0;
+  }
+
+  .wishlist .wishlist-product .wishlist-product-name {
+    flex-basis: 19%;
+  }
+  .wishlist-product-name h5 {
+    font-size: 1.5vw;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -394,6 +415,46 @@
   .contact-form-heading h3 {
     font-size: 2.3vw;
   }
+
+  /* ====== wishlist =========== */
+
+  .wishlist-single-product {
+    position: relative;
+  }
+
+  .wishlist .wishlist-product .wishlist-single-product {
+    justify-content: space-around;
+  }
+
+  .wishlist-single-product .wishlist-product-image {
+    flex-basis: 17%;
+  }
+
+  .wish-add-to-cart {
+    position: absolute;
+    left: 35%;
+    top: 58%;
+  }
+
+  .wish-add-to-cart button {
+    background: transparent;
+    color: #42b883;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .wishlist .wishlist-product .wishlist-product-name {
+    flex-basis: 32%;
+    margin-bottom: 1rem;
+  }
+  .wishlist-product-name h5 {
+    font-size: 2.3vw;
+  }
+
+  .wishlist-product-delete i {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -459,5 +520,38 @@
 
   .social img {
     margin-left: 0.5rem;
+  }
+
+  /* ================ wishlist ============== */
+
+  .wishlist .wishlist-product .wishlist-single-product {
+    justify-content: space-between;
+  }
+
+  .wishlist-product-price {
+    position: absolute;
+    top: 62%;
+    left: 63%;
+    margin-left: 1rem;
+  }
+
+  .wishlist-product-price p {
+    font-size: 14px;
+  }
+
+  .wishlist-product-delete i {
+    font-size: 17px;
+  }
+
+  .wishlist-single-product .wishlist-product-image {
+    flex-basis: 23%;
+  }
+
+  .wishlist .wishlist-product .wishlist-product-name {
+    flex-basis: 50%;
+  }
+
+  .wishlist-product-name h5 {
+    font-size: 3vw;
   }
 }

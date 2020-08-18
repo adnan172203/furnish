@@ -1121,6 +1121,7 @@ SHOP PAGE
 .two,
 .three {
   margin-bottom: 5px;
+  flex-basis: 38%;
 }
 
 .product-details .product-container .product-desc {
@@ -1171,7 +1172,7 @@ SHOP PAGE
 }
 
 .wishlist-continue-shopping {
-  margin-left: 13rem;
+  margin-left: 19%;
   color: #919191;
   margin-top: 2rem;
 }
@@ -2000,7 +2001,8 @@ button.coupon-button {
 }
 
 .wishlist .wishlist-product .wishlist-product-name {
-  flex-basis: 14%;
+  flex-basis: 16%;
+
 }
 
 .wishlist-product-image,
@@ -2011,18 +2013,21 @@ button.coupon-button {
 
 .wishlist-single-product .wishlist-product-image {
   flex-basis: 9%;
+  margin-left: 2rem;
 }
 .wishlist-product-image img {
   max-width: 100%;
 }
 
 .wishlist-product-name h5 {
-  color: #2c2c2c;
+  color: #202020;
+  font-weight: 500;
+  font-size: 1.1vw;
 }
 
 .wishlist-product-price,
 .wishlist-product-delete {
-  color: #919191;
+  color: #707070;
 }
 
 .wishlist-product-delete i {
@@ -2042,14 +2047,18 @@ button.coupon-button {
   margin-right: -6rem;
 }
 
+.wishlist-product-count h5 {
+  font-weight: 500;
+}
+
 .wish-add-to-cart button {
-  background: #42b883;
+  background: #42B883;
   color: #ffffff;
   outline: none;
   border: 0;
   padding: 9px 28px;
   border-radius: 7px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* ============================= CHECKOUT ====================== */
