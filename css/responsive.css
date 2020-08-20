@@ -227,6 +227,7 @@
   .min,
   .sec {
     width: 21%;
+    border-radius: 3px;
   }
 
   .deal .heading {
@@ -475,7 +476,26 @@
   }
 
   .deal {
+    background: #fff;
     height: 70vh;
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
+  }
+
+  .shop-count {
+    margin-top: 3rem;
+  }
+
+  .deal .heading {
+    margin-left: 0;
+  }
+
+  .deal .heading h1 {
+    font-size: 4.5vw;
+  }
+
+  .shop-count .button {
+    margin-top: 4rem;
+    margin-left: 0;
   }
 
   .one-text h4,
@@ -486,24 +506,39 @@
   }
 
   .countdown-timer {
-    width: 58%;
-    margin: auto 44%;
+    width: 77%;
+    margin: 0 auto;
+  }
+
+  .days,
+  .hour,
+  .min,
+  .sec {
+    width: 18vw;
+    height: 16vw;
   }
 
   .days p,
   .hour p,
   .min p,
   .sec p {
-    font-size: 3vw;
+    font-size: 5vw;
   }
 
   .countdown-timer .duration {
-    font-size: 2.5vw;
+    font-size: 4vw;
+    margin-top: 11px;
   }
 
   .items-on-sale .on-sale-items {
     width: 130%;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
+  }
+
+  .sale-discount-one h3,
+  .sale-discount-two h3,
+  .sale-discount-three h3 {
+    font-size: 3vw;
   }
 
   .newsletter {
@@ -639,6 +674,75 @@
 }
 
 @media screen and (max-width: 375px) {
+  /* ======= Home =============== */
+  .featured-products .featured-items .column-one {
+    flex-direction: column;
+    width: 71%;
+  }
+
+  .featured-items .two {
+    width: 95%;
+    margin-top: 1rem;
+  }
+
+  .featured-items .three {
+    flex-basis: 68%;
+    margin-top: 1.5rem;
+  }
+
+  .countdown-timer {
+    width: 92%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .days,
+  .hour,
+  .min,
+  .sec {
+    width: 18vw;
+    height: 19vw;
+    margin-right: 0.5rem;
+  }
+
+  .items-on-sale .on-sale-items .column-two {
+    flex-direction: column;
+  }
+
+  .items-on-sale .on-sale-items .two {
+    width: 68%;
+  }
+  .on-sale-items .three {
+    width: 68%;
+  }
+
+  .items-on-sale .on-sale-items {
+    margin-left: 1.3rem;
+  }
+
+  .items-on-sale .on-sale-items .two {
+    margin-bottom: 45px;
+    margin-top: 12px;
+  }
+
+  .sale-discount-one h3,
+  .sale-discount-two h3,
+  .sale-discount-three h3 {
+    font-size: 5vw;
+  }
+
+  .newsletter {
+    background: #fff;
+  }
+  
+  .newsletter-content {
+    position: absolute;
+    width: 83%;
+    right: 16px;
+    top: 21%;
+  }
+
+  /* ============ shopping cart ========== */
   .shoping-cart .cart-area .cart-product-name {
     flex-basis: 40%;
   }

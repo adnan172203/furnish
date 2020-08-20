@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -568,6 +570,7 @@ a {
   position: absolute;
   left: 29%;
   font-size: 1.5vw;
+  font-weight: 400;
 }
 
 .shop-count .button {
@@ -592,7 +595,6 @@ button.shop-now-button {
   margin-top: 8rem;
 }
 
-
 .best-selling-heading h2 {
   text-align: center;
   margin-bottom: 1rem;
@@ -609,7 +611,6 @@ button.shop-now-button {
   box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
   -webkit-box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
 }
-
 
 /* ===============  Items on sale ==========================*/
 
