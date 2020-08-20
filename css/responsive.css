@@ -1,66 +1,5 @@
-@media screen and (max-width: 600px) {
-  .navbar-toggler {
-    float: right;
-    display: block;
-  }
-
-  .navbar,
-  .shop-essentials {
-    display: none;
-  }
-
-  .show-menu > .navbar {
-    display: block;
-    position: absolute;
-    margin-top: 4rem;
-    z-index: 1;
-    width: 100%;
-    background: gray;
-    text-align: center;
-    margin-top: 5rem;
-  }
-
-  .show-menu > .navbar ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .show-menu > .navbar ul li {
-    padding: 0.5rem;
-  }
-
-  .show-menu > .navbar ul {
-    animation-name: slidenavAnimation;
-    animation-duration: 200ms;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-    -webkit-animation-name: slidenavAnimation;
-    -webkit-animation-duration: 200ms;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-name: slidenavAnimation;
-    -moz-animation-duration: 200ms;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-out;
-    -moz-animation-fill-mode: forwards;
-  }
-
-  @keyframes slidenavAnimation {
-    from {
-      margin-top: -30px;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0;
-      opacity: 1;
-    }
-  }
-}
-
 @media screen and (max-width: 900px) {
-  /* =============== Featured product ======= */
+  /* =============== Home page ======= */
 
   section.featured-products {
     overflow: hidden;
@@ -70,8 +9,8 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 85%;
-    margin-left: 10rem;
+    width: 100%;
+    margin-left: 7rem;
   }
 
   .featured-products .featured-items .one img,
@@ -79,7 +18,6 @@
   .featured-products .featured-items .three img {
     max-width: 100%;
     height: auto;
-    box-shadow: 10px 10px 26px -6px rgba(0, 0, 0, 0.07);
     border-radius: 10px;
   }
 
@@ -118,6 +56,25 @@
     font-size: 14px;
   }
 
+  .countdown-timer {
+    width: 41%;
+  }
+
+  .days,
+  .hour,
+  .min,
+  .sec {
+    width: 20%;
+  }
+
+  .deal .heading {
+    margin-left: 35%;
+  }
+
+  .shop-count .button {
+    margin-top: 3rem;
+    margin-left: 38%;
+  }
   /* ======== Deal Section =============== */
   /* .deal{
     display:none;
@@ -133,8 +90,8 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 85%;
-    margin-left: 10rem;
+    width: 100%;
+    margin-left: 7rem;
   }
 
   .items-on-sale .on-sale-items .one img,
@@ -142,7 +99,6 @@
   .items-on-sale .on-sale-items .three img {
     max-width: 100%;
     height: auto;
-    box-shadow: 10px 10px 26px -6px rgba(0, 0, 0, 0.07);
     border-radius: 10px;
   }
 
@@ -151,7 +107,7 @@
   }
 
   .items-on-sale .on-sale-items .one {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   .items-on-sale .on-sale-items .two {
@@ -174,6 +130,10 @@
 
   .on-sale-items .three {
     flex-basis: 39%;
+  }
+
+  .items-on-sale .on-sale-items .one-text {
+    margin-top: -5rem;
   }
 
   .items-on-sale .on-sale-items .three-text {
@@ -238,6 +198,67 @@
 }
 
 @media screen and (max-width: 768px) {
+  /* ======= HOME ====================== */
+
+  .featured-products .featured-items .one-text {
+    margin-top: -47px;
+  }
+
+  .featured-products .featured-items .one {
+    margin-bottom: 20px;
+  }
+
+  .one-text h4,
+  .one-text p {
+    font-size: 2vw;
+  }
+
+  .featured-products .featured-items .two-text {
+    margin-top: -48px;
+    font-size: 2vw;
+  }
+
+  .countdown-timer {
+    width: 45%;
+  }
+
+  .days,
+  .hour,
+  .min,
+  .sec {
+    width: 21%;
+  }
+
+  .deal .heading {
+    margin-left: 40%;
+  }
+
+  .shop-count .button {
+    margin-top: 3rem;
+    margin-left: 40%;
+  }
+
+  .items-on-sale .on-sale-items {
+    width: 100%;
+    margin-left: 7rem;
+  }
+
+  button.shop-now-button {
+    font-size: 2.2vw;
+  }
+
+  .sale-discount-one h3,
+  .sale-discount-two h3,
+  .sale-discount-three h3 {
+    font-size: 2.5vw;
+  }
+
+  .newsletter-subscription button {
+    padding: 0.5rem 3rem;
+  }
+
+  /* ======== ORDER ================ */
+
   .order-information .order-info-container {
     margin-left: 1rem;
   }
@@ -375,7 +396,134 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .navbar-toggler {
+    float: right;
+    display: block;
+  }
+
+  .navbar,
+  .shop-essentials {
+    display: none;
+  }
+
+  .show-menu > .navbar {
+    display: block;
+    position: absolute;
+    margin-top: 4rem;
+    z-index: 1;
+    width: 100%;
+    background: gray;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .show-menu > .navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .show-menu > .navbar ul li {
+    padding: 0.5rem;
+  }
+
+  .show-menu > .navbar ul {
+    animation-name: slidenavAnimation;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: slidenavAnimation;
+    -webkit-animation-duration: 200ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: slidenavAnimation;
+    -moz-animation-duration: 200ms;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-fill-mode: forwards;
+  }
+
+  @keyframes slidenavAnimation {
+    from {
+      margin-top: -30px;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+
+  .featured-products .featured-items,
+  .items-on-sale .on-sale-items {
+    margin-left: 5rem;
+  }
+}
+
 @media screen and (max-width: 550px) {
+  /* ======= HOME ============ */
+
+  .featured-products .featured-items {
+    width: 130%;
+    margin-left: 1.5rem;
+  }
+
+  .featured-products .featured-items .column-one {
+    margin-bottom: 8px;
+  }
+
+  .deal {
+    height: 70vh;
+  }
+
+  .one-text h4,
+  .one-text p,
+  .two-text h4,
+  .two-text p {
+    font-size: 2.5vw;
+  }
+
+  .countdown-timer {
+    width: 58%;
+    margin: auto 44%;
+  }
+
+  .days p,
+  .hour p,
+  .min p,
+  .sec p {
+    font-size: 3vw;
+  }
+
+  .countdown-timer .duration {
+    font-size: 2.5vw;
+  }
+
+  .items-on-sale .on-sale-items {
+    width: 130%;
+    margin-left: 2rem;
+  }
+
+  .newsletter {
+    height: 70vh;
+  }
+
+  .newsletter-content {
+    top: 8%;
+  }
+
+  .newsletter-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .newsletter-subscription {
+    width: 85%;
+  }
+
+  /* ===== Order Page ===== */
   .order-info-container .infos {
     padding: 0.8rem;
     flex-basis: 16%;

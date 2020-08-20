@@ -66,7 +66,7 @@ a {
 /* header dropdown cart */
 
 .header-cart-dropdown {
-  box-shadow: -2px -1px 22px -6px rgba(228, 225, 225, 0.71);
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
 }
 
 .header-cart-dropdown .header-cart-item {
@@ -235,7 +235,7 @@ a {
 /* header dropdown wishlist */
 
 .header-wishlist-dropdown {
-  box-shadow: -2px -1px 22px -6px rgba(228, 225, 225, 0.71);
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
 }
 
 .header-wishlist-dropdown .header-wishlist-item {
@@ -406,7 +406,7 @@ a {
   background: url(../img/banner/banner.png) no-repeat center center/cover;
   height: 100vh;
   position: relative;
-  box-shadow: 0 2px 2px #efefef;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
   max-width: 100%;
 }
 
@@ -459,7 +459,7 @@ a {
 .featured-products .featured-items .three img {
   width: 100%;
   height: auto;
-  box-shadow: 10px 10px 26px -6px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
   border-radius: 10px;
 }
 
@@ -491,6 +491,12 @@ a {
   left: 38%;
 }
 
+.one-text h4,
+.two-text h4,
+.three-text h4 {
+  font-weight: 500;
+}
+
 .featured-products .featured-items .feature_price {
   color: #42b883;
 }
@@ -503,6 +509,8 @@ a {
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-top: 4rem;
+  overflow: hidden;
 }
 
 .deal .heading {
@@ -578,7 +586,13 @@ button.shop-now-button {
   color: #42b883;
 }
 
-/* Best selling items */
+/* ===== Best selling items ======= */
+
+.best-selling-items {
+  margin-top: 8rem;
+}
+
+
 .best-selling-heading h2 {
   text-align: center;
   margin-bottom: 1rem;
@@ -592,13 +606,16 @@ button.shop-now-button {
   margin-bottom: 1rem;
   margin-top: 1rem;
   border-radius: 7px;
-  box-shadow: -2px -1px 22px -6px rgba(228, 225, 225, 0.71);
-  -webkit-box-shadow: -2px -1px 22px -6px rgba(228, 225, 225, 0.71);
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
+  -webkit-box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
 }
 
-/* Items on sale */
+
+/* ===============  Items on sale ==========================*/
+
 .items-on-sale {
   margin-bottom: 8rem;
+  margin-top: 8rem;
 }
 
 .items-sale-heading h2 {
@@ -626,7 +643,7 @@ button.shop-now-button {
 .items-on-sale .on-sale-items .three img {
   width: 100%;
   height: auto;
-  box-shadow: 10px 10px 26px -6px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
   border-radius: 10px;
 }
 
@@ -671,7 +688,7 @@ button.shop-now-button {
 .sale-discount-two h3,
 .sale-discount-three h3 {
   font-size: 1.5vw;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* ============== Newsletter ======================= */
@@ -681,6 +698,7 @@ button.shop-now-button {
   height: 100vh;
   position: relative;
   max-width: 100vw;
+  overflow: hidden;
 }
 
 .newsletter-content {
@@ -702,8 +720,12 @@ button.shop-now-button {
   color: #8b8b8b;
 }
 
+.newsletter-subscription {
+  width: 70%;
+}
+
 .newsletter-subscription input {
-  width: 60%;
+  width: 100%;
   display: block;
   padding: 10px;
   border-radius: 4px;
@@ -797,7 +819,7 @@ SHOP PAGE
   background: url(../img/shop/shop_banner.png) no-repeat center;
   background-size: contain;
   height: 58vh;
-  box-shadow: 0 2px 2px #efefef;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
 }
 
 .main-shop .main-product {
@@ -914,7 +936,7 @@ SHOP PAGE
   position: relative;
   background: white;
   border: none;
-  box-shadow: 0 1px 6px #e4e3e3;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
   padding: 16px 46px;
 }
 .search-product .fas.fa-search {
@@ -966,7 +988,7 @@ SHOP PAGE
   height: 25px;
   border-radius: 50%;
   background: rgb(255, 255, 255);
-  box-shadow: 0 1px 6px #acacac;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
   cursor: pointer;
 }
 
@@ -976,7 +998,7 @@ SHOP PAGE
   border-radius: 50%;
   background: #fff;
   cursor: pointer;
-  box-shadow: 0 1px 6px #acacac;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
   border: none;
 }
 
@@ -1024,7 +1046,7 @@ SHOP PAGE
   height: 25px;
   width: 25px;
   background-color: #eee;
-  box-shadow: 0 1px 6px #acacac;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
   border: none;
 }
 
@@ -1269,7 +1291,7 @@ SHOP PAGE
   position: absolute;
   background: #fff;
   padding: 1rem;
-  box-shadow: 2px 5px 6px #efefef;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
   border-radius: 5px;
 }
 
@@ -1302,7 +1324,7 @@ SHOP PAGE
   overflow: hidden;
   margin-bottom: 1rem;
   border-radius: 5px;
-  box-shadow: 2px 5px 6px #efefef;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
 }
 
 .review-form .review-message {
@@ -1373,7 +1395,7 @@ SHOP PAGE
 .email {
   padding: 3rem 3rem;
   border-radius: 5px;
-  color: #6D6D6D;
+  color: #6d6d6d;
   box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
   margin-right: 1rem;
 }
@@ -1410,7 +1432,7 @@ SHOP PAGE
   position: absolute;
   background: #fff;
   padding: 1rem;
-  box-shadow: 2px 5px 6px #efefef;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
   border-radius: 5px;
   color: #6d6d6d;
   top: -9%;
@@ -1499,7 +1521,7 @@ SHOP PAGE
 .social-contact .social {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   color: #585858;
 }
 .social img {
@@ -2002,7 +2024,6 @@ button.coupon-button {
 
 .wishlist .wishlist-product .wishlist-product-name {
   flex-basis: 16%;
-
 }
 
 .wishlist-product-image,
@@ -2052,7 +2073,7 @@ button.coupon-button {
 }
 
 .wish-add-to-cart button {
-  background: #42B883;
+  background: #42b883;
   color: #ffffff;
   outline: none;
   border: 0;
