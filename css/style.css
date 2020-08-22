@@ -414,7 +414,7 @@ a {
 
 .banner-area {
   position: relative;
-  overflow: hidden;
+  padding: 0 2rem;
 }
 
 .banner-row {
@@ -424,7 +424,7 @@ a {
 
 .banner {
   background: #fff;
-  height: 82vh;
+  height: 40vw;
   position: relative;
   box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
   max-width: 100%;
@@ -544,7 +544,7 @@ a {
   color: #c8c8c8;
   font-size: 1.5vw;
   font-weight: 400;
-  margin-top: 44px;
+  margin-top:10%;
 }
 
 .banner-text h3, .discount-price, .real-price {

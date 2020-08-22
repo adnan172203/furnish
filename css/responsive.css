@@ -200,6 +200,14 @@
 @media screen and (max-width: 768px) {
   /* ======= HOME ====================== */
 
+  .banner {
+    height: 51vw;
+  }
+
+  .banner-button {
+    bottom: 36%;
+  }
+
   .featured-products .featured-items .one-text {
     margin-top: -47px;
   }
@@ -398,6 +406,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .logo {
+    padding: 0 20%;
+  }
+
   .navbar-toggler {
     float: right;
     display: block;
@@ -416,7 +428,7 @@
     margin-top: 14rem;
     box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
     z-index: 2;
-    left: 19%;
+    left: 9%;
   }
 
   .show-menu > .navbar ul {
@@ -469,12 +481,12 @@
 
   /* shop essentials text */
 
-  .shop-essentials-text,.shop-essentials-icon {
+  .shop-essentials-text,
+  .shop-essentials-icon {
     display: none;
   }
 
-  .show-essential >
-  .shop-essentials-text {
+  .show-essential > .shop-essentials-text {
     display: block !important;
   }
 
@@ -493,14 +505,14 @@
   }
 
   .show-essential > .shop-essentials-text {
-    display:block;
+    display: block;
     position: absolute;
-    top: 10%;
+    top: 13%;
     z-index: 2;
     right: 9%;
     background: #fff;
     box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
-    width: 28%;
+    width: 32%;
     text-align: center;
   }
 
@@ -851,5 +863,11 @@
 
   .wishlist-product-name h5 {
     font-size: 3vw;
+  }
+
+  /* ==== shop essential text */
+  .show-essential > .shop-essentials-text {
+    right: 7%;
+    width: 44%;
   }
 }
