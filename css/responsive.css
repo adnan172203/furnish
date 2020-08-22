@@ -403,20 +403,20 @@
     display: block;
   }
 
-  .navbar,
-  .shop-essentials {
+  .navbar {
     display: none;
   }
 
   .show-menu > .navbar {
     display: block;
     position: absolute;
-    margin-top: 4rem;
-    z-index: 1;
-    width: 100%;
-    background: gray;
+    width: 34%;
+    background: #fff;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 14rem;
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
+    z-index: 2;
+    left: 19%;
   }
 
   .show-menu > .navbar ul {
@@ -426,6 +426,11 @@
 
   .show-menu > .navbar ul li {
     padding: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .show-menu > .navbar ul li a {
+    border-bottom: 1px solid #ececec;
   }
 
   .show-menu > .navbar ul {
@@ -460,6 +465,47 @@
   .featured-products .featured-items,
   .items-on-sale .on-sale-items {
     margin-left: 5rem;
+  }
+
+  /* shop essentials text */
+
+  .shop-essentials-text,.shop-essentials-icon {
+    display: none;
+  }
+
+  .show-essential >
+  .shop-essentials-text {
+    display: block !important;
+  }
+
+  .dot-icon {
+    display: block;
+  }
+
+  .show-essential > .shop-essentials-text ul {
+    list-style: none;
+  }
+
+  .show-essential > .shop-essentials-icon {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .show-essential > .shop-essentials-text {
+    display:block;
+    position: absolute;
+    top: 10%;
+    z-index: 2;
+    right: 9%;
+    background: #fff;
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
+    width: 28%;
+    text-align: center;
+  }
+
+  .show-essential > .shop-essentials-text ul li {
+    padding: 1rem;
   }
 }
 
@@ -734,7 +780,7 @@
   .newsletter {
     background: #fff;
   }
-  
+
   .newsletter-content {
     position: absolute;
     width: 83%;

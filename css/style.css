@@ -39,6 +39,7 @@ a {
   list-style: none;
 }
 
+
 .navbar ul li a {
   padding: 0.75rem;
   text-decoration: none;
@@ -51,6 +52,7 @@ a {
   border: none;
   outline: none;
   cursor: pointer;
+  color:#707070;
 }
 
 .navbar-toggler i {
@@ -151,7 +153,7 @@ a {
 
 .header-cart-dropdown {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   background: #ffffff;
   right: 6rem;
 }
@@ -320,7 +322,7 @@ a {
 
 .header-wishlist-dropdown {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   background: #ffffff;
   right: 6rem;
 }
@@ -396,6 +398,16 @@ a {
   color: #ffffff;
   transition: 0.3s ease-in;
 }
+
+/*=============== shop essentials text ===========*/
+.dot-icon{
+  display:none;
+}
+
+.shop-essentials-text {
+  display: none;
+}
+
 
 /********************* Banner ****************************/
 

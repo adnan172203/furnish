@@ -82,6 +82,8 @@
 })();
 
 
+// drop down menu
+
 (function(){
   const burgerIcon = document.querySelector('.fa-bars');
   const mainHeader = document.querySelector('.main-header');
@@ -91,4 +93,19 @@
   }
 
   burgerIcon.addEventListener('click', showMenu);
+})();
+
+
+
+// dropdown shop essentials text menu
+
+(function(){
+  const dotIcon = document.querySelector('.fa-ellipsis-v');
+  const shopEssential = document.querySelector('.shop-essentials');
+
+  function showMenu(){
+    shopEssential.classList.toggle('show-essential');
+  }
+
+  dotIcon.addEventListener('click', showMenu);
 })();
