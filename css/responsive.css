@@ -519,6 +519,41 @@
   .show-essential > .shop-essentials-text ul li {
     padding: 1rem;
   }
+
+  /* ============= Single Product page ================== */
+
+  .add-review {
+    height: 61vh;
+  }
+
+  .review-form {
+    padding: 1rem;
+  }
+
+  .review-form .review-message {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .review-info {
+    width: 92%;
+    flex-direction: column;
+    margin: 0 auto;
+    left: 4%;
+  }
+
+  .review-info input {
+    margin-bottom: 1rem;
+  }
+
+  .review-form .submit-button {
+    margin-top: 10rem;
+    margin-left:0;
+    text-align: center;
+    left: 0;
+    right: 0;
+
+  }
 }
 
 @media screen and (max-width: 550px) {
