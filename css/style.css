@@ -6,7 +6,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-    
 }
 
 body {
@@ -39,7 +38,6 @@ a {
   list-style: none;
 }
 
-
 .navbar ul li a {
   padding: 0.75rem;
   text-decoration: none;
@@ -52,7 +50,7 @@ a {
   border: none;
   outline: none;
   cursor: pointer;
-  color:#707070;
+  color: #707070;
 }
 
 .navbar-toggler i {
@@ -400,17 +398,15 @@ a {
 }
 
 /*=============== shop essentials text ===========*/
-.dot-icon{
-  display:none;
+.dot-icon {
+  display: none;
 }
 
 .shop-essentials-text {
   display: none;
 }
 
-
 /********************* Banner ****************************/
-
 
 .banner-area {
   position: relative;
@@ -435,7 +431,7 @@ a {
   width: 35%;
   position: absolute;
   right: 0;
-  z-index:1;
+  z-index: 1;
 }
 
 .slider-img img {
@@ -452,12 +448,12 @@ a {
   animation-fill-mode: none;
 }
 @keyframes fade-in-bottom {
-  0%{
+  0% {
     -webkit-transform: translateY(50px);
     transform: translateY(250px);
     opacity: 0;
   }
-  100%{
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
@@ -466,8 +462,12 @@ a {
 
 .ellipse {
   position: absolute;
-  background: rgb(82,222,151);
-  background: linear-gradient(187deg, rgba(82,222,151,1) 0%, rgba(66,184,131,1) 100%);
+  background: rgb(82, 222, 151);
+  background: linear-gradient(
+    187deg,
+    rgba(82, 222, 151, 1) 0%,
+    rgba(66, 184, 131, 1) 100%
+  );
   width: 30vw;
   height: 30vw;
   right: -23px;
@@ -475,10 +475,9 @@ a {
   top: 10%;
 }
 
-
 .ellipse {
-  width:100px;
-  height:100px;
+  width: 100px;
+  height: 100px;
   animation-name: slide-in-right;
   animation-duration: 3.2s;
   animation-timing-function: ease;
@@ -488,18 +487,17 @@ a {
   animation-fill-mode: none;
 }
 @keyframes slide-in-right {
-  0%{
+  0% {
     -webkit-transform: translateX(1000px);
     transform: translateX(1000px);
     opacity: 0;
   }
-  100%{
+  100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
-} 
-
+}
 
 .banner-text {
   position: absolute;
@@ -523,31 +521,32 @@ a {
   animation-fill-mode: none;
 }
 @keyframes fade-in-left {
-  0%{
+  0% {
     -webkit-transform: translateX(-50px);
     transform: translateX(-50px);
     opacity: 0;
   }
-  100%{
+  100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
 }
 
-
-.banner-text span{
-  color:#42b883;
+.banner-text span {
+  color: #42b883;
 }
 
 .banner-text h3 {
   color: #c8c8c8;
   font-size: 1.5vw;
   font-weight: 400;
-  margin-top:10%;
+  margin-top: 10%;
 }
 
-.banner-text h3, .discount-price, .real-price {
+.banner-text h3,
+.discount-price,
+.real-price {
   animation-name: fade-in-left;
   animation-duration: 2s;
   animation-timing-function: ease;
@@ -556,7 +555,6 @@ a {
   animation-direction: normal;
   animation-fill-mode: none;
 }
-
 
 .banner-text h3:after {
   content: '';
@@ -1449,7 +1447,8 @@ SHOP PAGE
   margin-top: 2rem;
 }
 
-.review-details .client-rating, .review-client-rating {
+.review-details .client-rating,
+.review-client-rating {
   margin-left: auto;
   color: #ffc107;
 }
@@ -1502,7 +1501,7 @@ SHOP PAGE
 }
 
 .review-message textarea {
-  width:100%;
+  width: 100%;
   outline: none;
   resize: none;
   border: none;
@@ -2277,3 +2276,126 @@ button.coupon-button {
 }
 
 /* ============================= CHECKOUT ====================== */
+.checkout-content {
+  margin-top: 70px;
+  margin-bottom: 4rem;
+}
+
+.checkout-container {
+  display: flex;
+}
+
+.billing-all {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.from-gr-one input[type='text'] {
+  width: 100%;
+}
+
+.frm-grp-one {
+  width: 84%;
+  display: flex;
+}
+
+.frm-grp-one input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #cecece;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.frm-grp-two {
+  display: flex;
+  flex-direction: column;
+  width: 82%;
+}
+
+.frm-grp-two input {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #c3c3c3;
+  margin-bottom: 20px;
+}
+
+select#country,
+select#town {
+  padding: 0.7rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  outline: 0;
+  border: 1px solid #cecece;
+  color: #a7a7a7;
+}
+
+.checkout-order-details-product {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.checkout-order-details-image {
+  flex-basis: 20%;
+}
+
+.checkout-order-details-image img {
+  max-width: 100%;
+}
+
+.checkout-order-details-name {
+  margin-top: 12px;
+  margin-left: 39px;
+}
+
+.checkout-order-details-info {
+  background: #fff;
+  padding: 2rem;
+  flex-basis: 26%;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
+  border-radius: 10px;
+}
+
+.checkout-order-total-details {
+  margin-left: 22%;
+  margin-top: 5%;
+}
+
+.checkout-order-details-heading h3 {
+  margin-bottom: 1rem;
+}
+
+.checkout-sub-total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-bottom: 2rem;
+}
+
+.checkout-shipping h4 {
+  margin-bottom: 1rem;
+}
+
+.checkout-total-price {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+
+.checkout-payment-shipping {
+  background: #fff;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
+  border-radius: 8px;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.checkout-payment-shipping h4 {
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+}
