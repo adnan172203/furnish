@@ -2283,12 +2283,22 @@ button.coupon-button {
 
 .checkout-container {
   display: flex;
+  justify-content: space-around;
 }
 
 .billing-all {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 57%;
+}
+
+.billing-heading {
+  margin-bottom: 2rem;
+  color: #4e4e4e;
+}
+
+.billing-details-two {
+  margin-top: 4rem;
 }
 
 .from-gr-one input[type='text'] {
@@ -2296,40 +2306,51 @@ button.coupon-button {
 }
 
 .frm-grp-one {
-  width: 84%;
   display: flex;
 }
 
 .frm-grp-one input {
   width: 100%;
-  padding: 0.7rem;
-  border: 1px solid #cecece;
-  margin-right: 10px;
+  padding: 16px;
+  border: 1px solid #dedede;
+  margin-right: 5px;
   margin-bottom: 20px;
   border-radius: 6px;
+  color: #a7a7a7;
 }
 
 .frm-grp-two {
   display: flex;
   flex-direction: column;
-  width: 82%;
 }
 
 .frm-grp-two input {
-  padding: 0.7rem;
+  padding: 16px;
   border-radius: 6px;
-  border: 1px solid #c3c3c3;
+  border: 1px solid #dedede;
   margin-bottom: 20px;
+  color: #a7a7a7;
+}
+
+.frm-grp-one input::placeholder,
+.frm-grp-two input::placeholder {
+  color: #a7a7a7;
 }
 
 select#country,
 select#town {
-  padding: 0.7rem;
+  padding: 16px;
   border-radius: 6px;
   margin-bottom: 1rem;
   outline: 0;
-  border: 1px solid #cecece;
+  border: 1px solid #dedede;
   color: #a7a7a7;
+}
+
+.billing-details-two textarea {
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  resize: none;
 }
 
 .checkout-order-details-product {
@@ -2386,7 +2407,6 @@ select#town {
   padding-top: 1rem;
 }
 
-
 .checkout-payment-shipping {
   background: #fff;
   box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
@@ -2398,4 +2418,18 @@ select#town {
 .checkout-payment-shipping h4 {
   margin-bottom: 3rem;
   padding-top: 2rem;
+}
+
+.place-order button {
+  background: #42b883;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 3rem;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+.place-order {
+  margin: 34px auto;
 }
