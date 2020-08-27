@@ -2388,6 +2388,15 @@ select#town {
   margin-bottom: 1rem;
 }
 
+.checkout-order-details-name h5 {
+  color: #2c2c2c;
+  font-weight: 500;
+}
+
+.checkout-order-total-details p {
+  color: #919191;
+}
+
 .checkout-sub-total {
   display: flex;
   justify-content: space-between;
@@ -2396,8 +2405,14 @@ select#town {
   margin-bottom: 2rem;
 }
 
+.checkout-sub-total h4 {
+  font-weight: 500;
+}
+
 .checkout-shipping h4 {
   margin-bottom: 1rem;
+  font-weight: 500;
+  font-weight: 500;
 }
 
 .checkout-total-price {

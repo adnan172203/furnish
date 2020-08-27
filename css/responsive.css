@@ -195,6 +195,36 @@
   .cart-discount .cart-update p {
     margin-bottom: 1rem;
   }
+
+  /* ================ Checkout ===================== */
+  .checkout-container {
+    flex-direction: column;
+  }
+  .billing-all {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .checkout-all {
+    padding: 2.5rem;
+  }
+  .checkout-order-details-image {
+    flex-basis: 100px;
+  }
+
+  .checkout-order-details-name {
+    margin-left: 0;
+    /* width: 95%; */
+  }
+
+  .checkout-order-total-details {
+    margin-left: 0;
+    margin-top: 3%;
+  }
+
+  .checkout-order-details-container {
+    margin-left: 4%;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -950,5 +980,12 @@
   .show-essential > .shop-essentials-text {
     right: 7%;
     width: 44%;
+  }
+  /* =============== CHeckout ================ */
+  .checkout-order-details-name h5 {
+    font-size: 12px;
+  }
+  .checkout-order-total-details p {
+    font-size: 12px;
   }
 }
