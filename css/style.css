@@ -991,15 +991,15 @@ section.shop-banner {
   right: 0;
 }
 
-.shop-banner-text{
-  color:#A8A8A8;
+.shop-banner-text {
+  color: #a8a8a8;
 }
 .shop-banner-text h2 {
   font-weight: 500;
 }
 
 .shop-banner-text span {
-  color:#42B883;
+  color: #42b883;
   font-weight: 900;
 }
 
@@ -1007,7 +1007,7 @@ section.shop-banner {
   position: absolute;
   top: 37%;
   left: 50%;
-  color: #A8A8A8;
+  color: #a8a8a8;
 }
 
 .main-shop .main-product {
@@ -2477,4 +2477,21 @@ select#town {
 
 .place-order {
   margin: 34px auto;
+}
+
+/* =============================== admin =========================== */
+
+.admin-body {
+  background: #f9f9f9;
+}
+
+.admin-nav {
+  background: #fff;
+  width: 17%;
+}
+
+.admin-nav li {
+  list-style: none;
+  padding: 1rem 1rem 1rem 3rem;
+  font-weight: 600;
 }
