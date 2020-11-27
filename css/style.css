@@ -2488,13 +2488,28 @@ select#town {
 
 .admin-nav {
   background: #fff;
-  width: 17%;
+}
+
+.admin-nav ul {
+  padding: 2rem;
 }
 
 .admin-nav li {
   list-style: none;
-  padding: 1rem 1rem 1rem 3rem;
+  padding: 1rem 3rem 1rem 3rem;
   font-weight: 600;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.admin-nav li:hover{
+  background:#42b883;
+  color:#fff;
+}
+
+.admin-nav i {
+  margin-right: 10px;
 }
 
 .create-product-btn {
