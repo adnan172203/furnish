@@ -2516,6 +2516,7 @@ select#town {
   position: absolute;
   right: 14%;
   top: 15%;
+  display:none;
 }
 
 .create-product-btn button {
@@ -2577,6 +2578,7 @@ select#town {
 .admin-main-shop {
   width: 76%;
   margin: 100px auto 0px auto;
+  display: none;
 }
 
 .admin-main-shop .admin-product {
