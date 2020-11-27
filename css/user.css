@@ -1,8 +1,8 @@
 /* ------------------------------------ */
 input {
   display: block;
-	outline: none;
-	border: none !important;
+  outline: none;
+  border: none !important;
 }
 
 textarea {
@@ -10,31 +10,28 @@ textarea {
   outline: none;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   border-color: transparent !important;
 }
 
 /* ------------------------------------ */
 button {
-	outline: none !important;
-	border: none;
-	background: transparent;
+  outline: none !important;
+  border: none;
+  background: transparent;
 }
 
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 iframe {
-	border: none !important;
+  border: none !important;
 }
 
-
-
-
-
-.order-list {
-  width: 80%;
+.user-list {
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -70,7 +67,8 @@ table {
 table * {
   position: relative;
 }
-table td, table th {
+table td,
+table th {
   padding-left: 8px;
 }
 table thead tr {
@@ -84,21 +82,24 @@ table tbody tr {
 table tbody tr:last-child {
   border: 0;
 }
-table td, table th {
+table td,
+table th {
   text-align: left;
 }
-table td.l, table th.l {
+table td.l,
+table th.l {
   text-align: right;
 }
-table td.c, table th.c {
+table td.c,
+table th.c {
   text-align: center;
 }
-table td.r, table th.r {
+table td.r,
+table th.r {
   text-align: center;
 }
 
-
-.table100-head th{
+.table100-head th {
   font-family: OpenSans-Regular;
   font-size: 18px;
   color: #fff;
@@ -107,8 +108,8 @@ table td.r, table th.r {
 }
 
 /* tbody tr:nth-child(even) {
-  background-color: #f5f5f5;
-} */
+    background-color: #f5f5f5;
+  } */
 
 tbody tr {
   font-family: OpenSans-Regular;
@@ -142,6 +143,10 @@ tbody tr:hover {
   text-align: right;
 }
 
+.column4 i {
+  margin-right: 7px;
+}
+
 .column5 {
   width: 170px;
   text-align: right;
@@ -153,12 +158,14 @@ tbody tr:hover {
   padding-right: 62px;
 }
 
-
 @media screen and (max-width: 992px) {
   table {
     display: block;
   }
-  table > *, table tr, table td, table th {
+  table > *,
+  table tr,
+  table td,
+  table th {
     display: block;
   }
   table thead {
@@ -187,22 +194,22 @@ tbody tr:hover {
     top: 0;
   }
   table tbody tr td:nth-child(1):before {
-    content: "Date";
+    content: 'Date';
   }
   table tbody tr td:nth-child(2):before {
-    content: "Order ID";
+    content: 'Order ID';
   }
   table tbody tr td:nth-child(3):before {
-    content: "Name";
+    content: 'Name';
   }
   table tbody tr td:nth-child(4):before {
-    content: "Price";
+    content: 'Price';
   }
   table tbody tr td:nth-child(5):before {
-    content: "Quantity";
+    content: 'Quantity';
   }
   table tbody tr td:nth-child(6):before {
-    content: "Total";
+    content: 'Total';
   }
 
   .column4,
